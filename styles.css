@@ -72,6 +72,15 @@ header p {
     letter-spacing: 0.3px;
 }
 
+.fa-bars {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 3rem;
+    visibility: hidden;
+    color: #042259;
+}
+
 nav ul{
     display: flex;
     font-family: 'Catamaran', sans-serif;
@@ -85,10 +94,31 @@ nav a {
     font-size: 18px;
 }
 
+.icons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 1.5rem;
+    color: #1D81CC;
+    margin: 100px 10px;
+    justify-content: space-around;
+}
+
+.fa-facebook-f {
+    padding: 10px 0px;
+}
+
+.fa-twitter {
+    padding: 10px 0px;
+}
+
 h2  {
     text-transform: uppercase;
     line-height: 37.9px;
     letter-spacing: 0.3px;
+    font-size: 42px;
 }
 
 .gallery h2 {
@@ -143,22 +173,157 @@ button {
 
 .smoothie {
     display: flex;
+    padding: 0px;
+    background-color: #F0F5FF;
 }
 
 .smoothie img {
+    width: 3200px;
+    height: 80vh;
+}
+
+.smoothie .textContainer {
+    text-align: center;
+    margin: 100px 100px 0px 100px;
+}
+
+.smoothie button, .stove button {
+    background-color: #f5c8cf;
+}
+
+.stove {
+    display: flex;
+    padding: 0px;
+    background-color: #F0F5FF;
+}
+
+.stove img {
+    width: 3200px;
+    height: 80vh;
+}
+
+.stove .textContainer {
+    text-align: center;
+    margin: 100px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    background-color: #FCDDE2;
+    color: #1D81CC;
+    font-size: 31.2px;
+    padding: 0px 0px 50px 0px;
+}
+
+.jobs {
+    margin: 0px 60px;
+}
 
 
+.bannerIcons {
+    display: flex;
+    justify-content: center;
+    background-color:#FCDDE2;
+    color: #042259;
+    padding: 50px 0px 20px 0px;
+    font-size: 31.2px;
+}
+
+.fa-briefcase {
+    margin: 0px 150px;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: 'Emblema One';
+    color:#1D81CC;
+    text-transform: uppercase;
+}
+
+footer nav a {
+    padding: 10px 30px;
+    font-size: 25px;
 }
 
 
 /* Media Queries */
 
 @media (max-width: 900px){
+
     .headerFlex {
-            flex-direction: column;
+        flex-direction: column;
         }
     
-    nav ul {
-            flex-direction: column;
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav, .icons, .toaster {
+        display: none;
+    }
+
+    h1 {
+        font-size: 90px;
+    }
+
+    h2 {
+        padding-bottom: 30px;
+    }
+
+    header p {
+        font-size: 30px;
+    }
+
+    i.fa-bars {
+        visibility: visible;
+    }
+
+    .coffee, .stove {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    button, .smoothie button, .stove button {
+        padding: 20px 40px;
+        margin-top: 40px;
+        background-color: #042259;
+        color: white;
+    }
+
+    .coffee h2 {
+        text-align: center;
+    }
+
+    .gallery {
+        padding: 50px 20px;
+    }
+        
+    .galleryFlex {
+        width: 150%;
         }
-}
+
+    .coffee img {
+        width: 80%;
+    }
+
+    .smoothie {
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+    }
+
+    .stove img {
+        margin-top: 50px;
+    }
+
+
+
+    }
+
+
+
