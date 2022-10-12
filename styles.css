@@ -114,6 +114,8 @@ nav a {
     padding: 10px 0px;
 }
 
+/* GALLERY STYLING */
+
 h2  {
     text-transform: uppercase;
     line-height: 37.9px;
@@ -171,6 +173,8 @@ button {
     color: white;
 }
 
+/* SECTION STYLING */
+
 .smoothie {
     display: flex;
     padding: 0px;
@@ -206,6 +210,8 @@ button {
     text-align: center;
     margin: 100px;
 }
+
+/* BANNER STYLING */
 
 .banner {
     display: flex;
